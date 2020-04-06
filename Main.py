@@ -279,11 +279,11 @@ def Main(image):
     # Generate a polygon to illustrate the search window area
     # And recast the x and y points into usable format for cv2.fillPoly()
     left_line_window1 = np.array([np.transpose(np.vstack([left_fitx + 3, ploty]))])
-    left_line_window2 = np.array([np.flipud(np.transpose(np.vstack([left_fitx+400, 
+    left_line_window2 = np.array([np.flipud(np.transpose(np.vstack([left_fitx +500, 
                               ploty])))])
     left_line_pts = np.hstack((left_line_window1, left_line_window2))
     right_line_window1 = np.array([np.transpose(np.vstack([right_fitx - 3, ploty]))])
-    right_line_window2 = np.array([np.flipud(np.transpose(np.vstack([right_fitx-400, 
+    right_line_window2 = np.array([np.flipud(np.transpose(np.vstack([right_fitx-500, 
                               ploty])))])
     right_line_pts = np.hstack((right_line_window1, right_line_window2))
     
